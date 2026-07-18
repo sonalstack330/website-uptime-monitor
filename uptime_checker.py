@@ -10,6 +10,12 @@ def check_website(url):
     except requests.exceptions.ConnectionError:
         print(f"{url} is DOWN (no response)")
 
-check_website("https://www.google.com")
-check_website("https://www.github.com")
-check_website("https://thiswebsitedoesnotexist12345.com")
+websites = [
+    "https://www.google.com",
+    "https://www.github.com",
+    "https://thiswebsitedoesnotexist12345.com",
+]
+
+for site in websites:
+    check_website(site)
+
