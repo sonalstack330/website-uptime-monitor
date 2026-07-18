@@ -39,15 +39,9 @@ cd website-uptime-monitor
 ## ▶️ How to Run
 python uptime_checker.py
 
-Sample output:
-=== Check round 1 ===
-https://www.google.com is UP
-https://www.github.com is UP
-https://thiswebsitedoesnotexist12345.com is DOWN (no response)
-Waiting 10 seconds before next check...
+## Sample Output
 
-Results are also saved to `uptime_log.txt` with timestamps.
-
+![Uptime Monitor Screenshot](screenshot.png)
 
 ## 💡 Future Improvements
 
