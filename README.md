@@ -47,3 +47,19 @@ https://thiswebsitedoesnotexist12345.com is DOWN (no response)
 Waiting 10 seconds before next check...
 
 Results are also saved to `uptime_log.txt` with timestamps.
+
+
+## 💡 Future Improvements
+
+- Store results in a database instead of a text file
+- Build a simple dashboard to visualize uptime history
+- Add Slack/SMS alerts alongside email
+- Calculate uptime percentage over time
+
+## 📖 What I Learned
+
+- Making HTTP requests and handling exceptions in Python
+- Using `smtplib` to send automated emails
+- Writing logs for troubleshooting and auditing
+- Securing credentials using environment variables instead of hardcoding them
+- Structuring a real-world monitoring tool similar to industry SaaS products
