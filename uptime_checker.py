@@ -1,3 +1,4 @@
+import os
 import requests
 import logging
 import time
@@ -12,9 +13,9 @@ logging.basicConfig(
     format="%(asctime)s - %(message)s",
 )
 
-EMAIL_SENDER = "Sonalgajbhiye2001@gmail.com"
-EMAIL_PASSWORD = "setrtsltemtbhiak"  # your 16-char app password
-EMAIL_RECEIVER = "Sonalgajbhiye04@gmail.com"
+EMAIL_SENDER = os.environ.get("EMAIL_SENDER")
+EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
+EMAIL_RECEIVER = os.environ.get("EMAIL_RECEIVER")
 
 def check_website(url):
     try:
